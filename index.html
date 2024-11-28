@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME DWETC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO THE DARKWEB EROTIC</h1>
+        <div class="gallery">
+            <!-- Imágenes de ejemplo (usa tus propias imágenes en lugar de las URLs aquí) -->
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 1.jpg" alt="IMAGEN 1">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 2.jpg" alt="IMAGEN 2">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 3.jpg" alt="IMAGEN 3">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 4.jpg" alt="Imagen 4">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 5.png" alt="Imagen 5">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 6.jpg" alt="">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 7.jpg" alt="">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 8.jpg" alt="">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 9.png" alt="Imagen 9">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 10.png" alt="Imagen 10">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 11.png" alt="Imagen 11">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 12.png" alt="Imagen 12">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 13.png" alt="Imagen 13">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 14.png" alt="Imagen 14">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 15.png" alt="Imagen 15">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 16.png" alt="Imagen 16">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 17.png" alt="Imagen 17">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 18.png" alt="Imagen 18">
+            </div>
+            <div class="image-item" onclick="openModal(this)">
+                <img src="IMAGEN 19.png" alt="Imagen 19">
+            <!-- Agrega hasta 20 imágenes de la misma manera -->
+             
+    </div>
+
+    <!-- Modal para ver imagen en pantalla completa -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Función para abrir el modal
+        function openModal(element) {
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImage.src = element.querySelector("img").src;
+        }
+
+        // Función para cerrar el modal
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
